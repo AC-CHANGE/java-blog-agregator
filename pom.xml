@@ -11,7 +11,7 @@
 
     <!-- Shared version number properties -->
     <properties>
-        <org.springframework.version>4.0.2.RELEASE</org.springframework.version>
+        <org.springframework.version>4.2.5.RELEASE</org.springframework.version>
         <apache.tiles>3.0.3</apache.tiles>
     </properties>
 
