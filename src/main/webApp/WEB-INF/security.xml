@@ -12,11 +12,12 @@
     <http use-expressions="true">
         <csrf disabled="true"/>
         <form-login
-                default-target-url="/index.html"/>
+                login-page="/login.html"
+                default-target-url="/index.html"
+                />
         <intercept-url pattern="/users**" access="hasRole('ROLE_ADMIN')" />
         <intercept-url pattern="/users/**" access="hasRole('ROLE_ADMIN')" />
-        <form-login />
-        <logout />
+        <logout logout-url="/logout"/>
         </http>
 
 <authentication-manager>
