@@ -46,5 +46,8 @@
 
       <jpa:repositories base-package="com.test.jba.repository" entity-manager-factory-ref="emf" transaction-manager-ref="transactionManager"/>
     <!--   <jpa:repositories base-package="com.test.jba.repository" transaction-manager-ref="transactionManager" entity-manager-factory-ref="emf"/> -->
+    
+    <import resource="security.xml" />
+
 
   </beans>

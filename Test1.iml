@@ -18,6 +18,7 @@
           <file>file://$MODULE_DIR$/src/main/webApp/WEB-INF/ApplicationContext.xml</file>
           <file>file://$MODULE_DIR$/src/main/webApp/WEB-INF/layout/ApplicationContext.xml</file>
           <file>file://$MODULE_DIR$/src/main/webApp/WEB-INF/App;icationContext.xml</file>
+          <file>file://$MODULE_DIR$/src/main/webApp/WEB-INF/security.xml</file>
         </fileset>
       </configuration>
     </facet>
@@ -53,6 +54,12 @@
     <orderEntry type="library" name="Spring Security-3.2.5" level="project" />
     <orderEntry type="library" exported="" scope="RUNTIME" name="org.eclipse.jetty:jetty-maven-plugin:9.0.0.M2" level="project" />
     <orderEntry type="library" exported="" name="org.apache.maven.plugins:maven-compiler-plugin:2.0" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.security:spring-security-taglibs:4.0.4.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.security:spring-security-acl:4.0.4.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.security:spring-security-core:4.0.4.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.security:spring-security-web:4.0.4.RELEASE" level="project" />
+    <orderEntry type="library" name="Maven: aopalliance:aopalliance:1.0" level="project" />
+    <orderEntry type="library" name="Maven: org.springframework.security:spring-security-config:4.0.4.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: jstl:jstl:1.2" level="project" />
     <orderEntry type="library" name="Maven: org.hsqldb:hsqldb:2.3.2" level="project" />
     <orderEntry type="library" name="Maven: org.springframework.data:spring-data-jpa:1.9.4.RELEASE" level="project" />
@@ -92,7 +99,6 @@
     <orderEntry type="library" name="Maven: org.springframework:spring-expression:4.2.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-beans:4.2.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-aop:4.2.5.RELEASE" level="project" />
-    <orderEntry type="library" name="Maven: aopalliance:aopalliance:1.0" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-context:4.2.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-context-support:4.2.5.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: org.springframework:spring-tx:4.2.5.RELEASE" level="project" />
