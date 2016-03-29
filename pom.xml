@@ -13,7 +13,7 @@
     <properties>
         <org.springframework.version>4.2.5.RELEASE</org.springframework.version>
         <apache.tiles>3.0.3</apache.tiles>
-        <spring.security.version>4.0.4.RELEASE</spring.security.version>
+        <spring.security.version>4.0.0.RELEASE</spring.security.version>
     </properties>
 
     <dependencies>
