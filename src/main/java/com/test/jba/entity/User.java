@@ -13,7 +13,17 @@ public class User {
 
     private String name;
     private String email;
+
+    public boolean isEnabled() {
+        return enabled;
+    }
+
+    public void setEnabled(boolean enabled) {
+        this.enabled = enabled;
+    }
+
     private String password;
+    private  boolean enabled;
 
     @OneToMany(mappedBy = "user", fetch=FetchType.LAZY )
     private List<Blog> blogs;
