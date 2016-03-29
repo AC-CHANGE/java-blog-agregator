@@ -18,6 +18,7 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.ArrayList;
 import java.util.List;
 
+
 @Service
 @Transactional
 public class UserService {
@@ -64,5 +65,10 @@ public class UserService {
         user.setRoles(roles);
 
         userRepository.save(user);
+    }
+
+    public User findAOneWithBlogs(String name) {
+        User user = userRepository.findByName(name);
+        return findAOneWithBlogs(user.getId());
     }
 }
