@@ -25,7 +25,7 @@ public class User {
     private String password;
     private  boolean enabled;
 
-    @OneToMany(mappedBy = "user", fetch=FetchType.LAZY )
+    @OneToMany(mappedBy = "user", cascade = CascadeType.REMOVE)
     private List<Blog> blogs;
 
     @ManyToMany
