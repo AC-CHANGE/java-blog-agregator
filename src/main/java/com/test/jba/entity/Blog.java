@@ -1,6 +1,9 @@
 package com.test.jba.entity;
 
+import org.hibernate.validator.constraints.URL;
+
 import javax.persistence.*;
+import javax.validation.constraints.Size;
 import java.util.List;
 
 @Entity
@@ -9,7 +12,10 @@ public class Blog {
     @GeneratedValue
     private Integer id;
 
+    @URL
     private String url;
+
+    @Size(min=1, message = "Name must be at least 1 character!")
     private String name;
 
     @ManyToOne
