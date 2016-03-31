@@ -39,13 +39,13 @@ public class UserService {
         return userRepository.findAll();
     }
 
-    public User findAOne(int id) {
+    public User findOne(int id) {
         return userRepository.findOne(id);
     }
 
     @Transactional
     public User findAOneWithBlogs(int id) {
-        User user = findAOne(id);
+        User user = findOne(id);
         List<Blog> blogs = blogRepository.findByUser(user);
         for (Blog blog : blogs) {
             List<Item> items = itemRepository.findByBlog(blog, new PageRequest(0,10, Sort.Direction.DESC,"publishedDate"));
@@ -74,5 +74,9 @@ public class UserService {
 
     public void delete(int id) {
        userRepository.delete(id);
+    }
+
+    public User findOne(String username) {
+        return userRepository.findByName(username);
     }
 }
