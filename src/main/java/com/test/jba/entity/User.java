@@ -15,6 +15,7 @@ public class User {
     private Integer id;
 
     @Size(min=3, message = "Name must be at least 3 characters!")
+    @Column(unique = true)
     private String name;
 
     @Size(min=3, message = "Invalid email address!")
