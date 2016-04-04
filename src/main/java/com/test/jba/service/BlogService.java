@@ -8,6 +8,7 @@ import com.test.jba.repository.BlogRepository;
 import com.test.jba.repository.ItemRepository;
 import com.test.jba.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.security.access.method.P;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Service;
@@ -41,6 +42,13 @@ public class BlogService {
             }
         } catch (RssException e) {
             e.printStackTrace();
+        }
+    }
+    @Scheduled(fixedDelay = 3600000)
+    public void reloadBlogs(){
+        List<Blog> blogs = blogRepository.findAll();
+        for (Blog blog:blogs) {
+            saveItems(blog);
         }
     }
 
